@@ -41,7 +41,7 @@ Follow the below steps to fix an issue and to create a pull request.
 
 3. If the testing is passed, push the changes to your forked repository.
 
-4. Create a Pull Request in the format #issue-no some-meaningful-message.(Eg: #123 Fixed NavBar not showing properly)
+4. Create a Pull Request in the format #issue-no some-meaningful-message.(Eg: `#123 Fixed NavBar not showing properly`)
 
     **P.S Make sure your code is properly Intented before pushing the changes.**
 
