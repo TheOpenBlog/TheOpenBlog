@@ -4,6 +4,7 @@ TheOpenBlog is an open source blogging platform for the public. This includes ma
 ## Interested to join the developer team?
 We welcome contributions from developers. Here are some resources:
   * [**Contributor Guide**](/docs/contribute.md) : This document describes what you need to know/do to become a contributor. This is **for new contributors**.
+
 ## Contact
 A whatsapp group is there which has all the team members of the project. Just drop a mail at psnappz@gmail.com and we'll add you to the group.
 
