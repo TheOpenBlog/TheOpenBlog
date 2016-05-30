@@ -49,9 +49,10 @@ Follow the below steps to fix an issue and to create a pull request.
 classifies the issue based on the technology it involves.
 
 |Label             | Description                                                      
-|------------------|--------------------------------
-|`r.Ongoing`       |PRs which are being reviewed                     
-|`r.MergeApproved` |PR is eligible to get merged                
-|`r.Merged`        | PRs which are merged and closed                  
-|`r.Discarded`     |PR reviewed is ineligible                     
+|------------------|-------------------------------
+|`r.Valid`         |PR is a valid one.
+|`r.Ongoing`       |PR on review.                     
+|`r.MergeApproved` |PR is eligible to get merged.                
+|`r.Merged`        |PR merged and closed.                  
+|`r.Discarded`     |PR reviewed is ineligible.                     
 
