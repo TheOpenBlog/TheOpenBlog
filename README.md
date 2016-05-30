@@ -1,4 +1,6 @@
 # TheOpenBlog
+<img src="/images/TheOpenBlog.png"> 
+
 TheOpenBlog is an open source blogging platform for the public. This includes managing an account for each users and creating a blog post. Users will also be able to have a custom link to their blog posts for sharing.
 
 ## Interested to join the developer team?
