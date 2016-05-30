@@ -45,22 +45,13 @@ Follow the below steps to fix an issue and to create a pull request.
 
     **P.S Make sure your code is properly Intented before pushing the changes.**
 
-## Reviewing a fix
+## **Reviewing a fix**
+classifies the issue based on the technology it involves.
 
-The pull requests created are reviewed by our team before merging it to the main repository.
+|Label             | Description                                                      
+|------------------|--------------------------------
+|`r.Ongoing`       |PRs which are being reviewed                     
+|`r.MergeApproved` |PR is eligible to get merged                
+|`r.Merged`        | PRs which are merged and closed                  
+|`r.Discarded`     |PR reviewed is ineligible                     
 
-### r.Ongoing
-
-This label is given to all the PRs which are being reviewed by the team.
-
-### r.MergeApproved
-
-This label is given when a reviewed PR is eligible to get merged.
-
-### r.Discarded
-
-This label is given if a PR reviewed is ineligible.
-
-### r.Merged
-
-This label is given to the PRs which are merged and colsed.
