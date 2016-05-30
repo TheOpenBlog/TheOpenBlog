@@ -46,7 +46,8 @@ Follow the below steps to fix an issue and to create a pull request.
     **P.S Make sure your code is properly Intented before pushing the changes.**
 
 ## **Reviewing a fix**
-classifies the issue based on the technology it involves.
+
+The following labels are given to a PR.
 
 |Label             | Description                                                      
 |------------------|-------------------------------
