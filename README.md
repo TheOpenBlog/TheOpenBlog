@@ -11,3 +11,10 @@ We welcome contributions from developers. Here are some resources:
 A whatsapp group is there which has all the team members of the project. Just drop a mail at psnappz@gmail.com and we'll add you to the group.
 
 Alternately you can mail us @ psnappz@gmail.com for project related queries.
+
+## The Crew
+
+|Project Lead             |Core Members                                                      
+|-------------------------|--------------
+|@PSNAppZ                 |@Adhi1234   
+|                         |@th3-j0k3r
