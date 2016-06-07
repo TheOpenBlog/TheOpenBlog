@@ -6,15 +6,14 @@ TheOpenBlog is an open source blogging platform for the public. This includes ma
 ## Interested to join the developer team?
 We welcome contributions from developers. Here are some resources:
   * [**Contributor Guide**](/docs/contribute.md) : This document describes what you need to know/do to become a contributor. This is **for new contributors**.
-  
+  * [**Using Issue Tracker**](/docs/issueTracker.md) :This guide helps to know how the issues are prioritised and how can you query for a particular issue.
 ## Contact
-A whatsapp group is there which has all the team members of the project. Just drop a mail at psnappz@gmail.com and we'll add you to the group.
+A whatsapp group is there which has all the team members of the project. Just drop a mail at psnappz@gmail.com and we'll add you to the group. Or use the issue tracker for any help.
 
 Alternately you can mail us @ psnappz@gmail.com for project related queries.
 
 ## The Crew
 
-|Project Lead             |Core Members                                                      
-|-------------------------|--------------
-|@PSNAppZ                 |@Adhi1234   
-|                         |@th3-j0k3r
+@PSNAppZ              
+@Adhi1234   
+@th3-j0k3r
