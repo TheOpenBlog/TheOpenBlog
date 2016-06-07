@@ -13,7 +13,7 @@ or a sort it in a specific priority. Each issue will be given a priority label, 
 ## **Priority Labels**
 
 |Label             | Description            | Action to be taken
-|------------------|--------------------------------------------
+|------------------|------------------------|-------------------
 |`p.Low`           |Very Low priority issue.| Not expecting a fix soon.
 |`p.Normal`        |Normal issue.           | Expecting a fix soon.
 |`p.Medium`        |Medium priority.        | Waiting for a fix.
