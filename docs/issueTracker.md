@@ -20,7 +20,7 @@ or a sort it in a specific priority. Each issue will be given a priority label, 
 |`p.High`          |High priority.          | Fix ASAP.
 |`p.Urgent`        |Very High priority.     | Fix before further development.
 
-## **Feature Labels**
+## **Feature Labels**(will be available once the feature are announced)
 |Label             | Description           
 |------------------|-------------------
 |`N/A`             |Not Available Yet
