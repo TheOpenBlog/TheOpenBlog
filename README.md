@@ -7,6 +7,7 @@ TheOpenBlog is an open source blogging platform for the public. This includes ma
 We welcome contributions from developers. Here are some resources:
   * [**Contributor Guide**](/docs/contribute.md) : This document describes what you need to know/do to become a contributor. This is **for new contributors**.
   * [**Using Issue Tracker**](/docs/issueTracker.md) :This guide helps to know how the issues are prioritised and how can you query for a particular issue.
+  * [**Specifications**](/docs/specs.md) :This guide helps to know the specifications of the project.
 ## Contact
 A whatsapp group is there which has all the team members of the project. Just drop a mail at psnappz@gmail.com and we'll add you to the group. Or use the issue tracker for any help.
 
