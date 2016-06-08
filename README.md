@@ -10,10 +10,9 @@ We welcome contributions from developers. Here are some resources:
 ## Contact
 A whatsapp group is there which has all the team members of the project. Just drop a mail at psnappz@gmail.com and we'll add you to the group. Or use the issue tracker for any help.
 
-Alternately you can mail us @ psnappz@gmail.com for project related queries.
-
 ## The Crew
 
 @PSNAppZ              
 @Adhi1234   
 @th3-j0k3r
+...(this list will be updated once a member is contributed to this project)
