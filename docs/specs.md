@@ -1,9 +1,9 @@
 #Specifications List(in progress...)
 
 ###Roles
-1. Admin(The site administrator who will be managing the moderators and users.)
-2. Moderator(The moderator who manages the users and their blog posts.)
-3. User(Normal users of the blog.)
+1. Admin (The site administrator who will be managing the moderators and users.)
+2. Moderator (The moderator who manages the users and their blog posts.)
+3. User (Normal users of the blog.)
 
 ##This documentation will contain all the requirements needed for the project.
 
