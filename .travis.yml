@@ -14,8 +14,3 @@ matrix:
 script:
   - ./phpunit
   
-notifications:
-  email: false
-
-    on_success: false
-    on_failure: always
