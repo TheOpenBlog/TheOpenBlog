@@ -1,0 +1,7 @@
+<phpunit bootstrap="src/test/autoload.php">
+  <testsuites>
+    <testsuite name="The OpenBlog Tests">
+      <directory>/src/test</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
