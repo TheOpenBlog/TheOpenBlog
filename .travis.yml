@@ -11,11 +11,9 @@ matrix:
     - php: nightly
     - php: hhvm
 
-sudo: false
-
 script:
   - ./phpunit
-
+  
 notifications:
   email: false
 
