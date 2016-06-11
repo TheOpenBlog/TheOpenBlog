@@ -1,4 +1,6 @@
 # TheOpenBlog
+![](http://www.repostatus.org/badges/0.1.0/inactive.svg)
+[![Build Status](https://travis-ci.org/TheOpenBlog/TheOpenBlog.svg?branch=master)](https://travis-ci.org/TheOpenBlog/TheOpenBlog)
 <img src="/images/TheOpenBlog.png">
 
 TheOpenBlog is an open source blogging platform for the public. This includes managing an account for each users and creating a blog post. Users will also be able to have a custom link to their blog posts for sharing.
