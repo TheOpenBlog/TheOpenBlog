@@ -1,5 +1,5 @@
 # TheOpenBlog
-![](http://www.repostatus.org/badges/0.1.0/inactive.svg)
+![](http://www.repostatus.org/badges/0.1.0/active.svg)
 [![Build Status](https://travis-ci.org/TheOpenBlog/TheOpenBlog.svg?branch=master)](https://travis-ci.org/TheOpenBlog/TheOpenBlog)
 <img src="/images/TheOpenBlog.png">
 
