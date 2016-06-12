@@ -1,5 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'].'/src/main/index.php');
+include($_SERVER['DOCUMENT_ROOT'].'src/main/index.php');
 #Testing class for index.php
 class myClassTest extends PHPUnit_Framework_TestCase{
     public function testYolo(){
