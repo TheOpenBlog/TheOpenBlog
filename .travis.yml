@@ -11,5 +11,5 @@ matrix:
     - php: nightly
     - php: hhvm
 
-script: vendor/bin/phpunit --debug
+script:phpunit --debug
   
