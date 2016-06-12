@@ -1,5 +1,4 @@
 <?php
-#This is just a test file
 class myClass{
     public function myfun($x){
         if($x===4){
