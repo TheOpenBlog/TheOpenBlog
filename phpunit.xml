@@ -1,6 +1,6 @@
 <phpunit bootstrap="src/test/autoload.php">
   <testsuites>
-    <testsuite name="The OpenBlog Tests">
+    <testsuite name="Test">
       <directory suffix="Test.php">/src/test</directory>
     </testsuite>
   </testsuites>

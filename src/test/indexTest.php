@@ -2,7 +2,7 @@
 use './src/main/index.php';
 #Testing class for index.php
 class myClassTest extends PHPUnit_Framework_TestCase{
-    public function yoloTest(){
+    public function testYolo(){
         $args =2;
         $expectedResult = "Bolo";
         $result = myfun($args);
