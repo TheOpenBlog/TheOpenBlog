@@ -1,12 +1,11 @@
 <?php
-#This is just a test file
 class myClass{
     public function myfun($x){
-        if($x===4){
-            echo "Yolo";
+        if($x==4){
+            return "Yolo";
         }
         else{
-            echo "Bolo";
+            return "Bolo";
         }
 
     }
@@ -15,7 +14,4 @@ class myClass{
         return $x;
     }
 }
-$x = new myClass;
-$y=$x->randNo();
-$x->myfun($y);
 ?>
