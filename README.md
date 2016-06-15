@@ -11,7 +11,6 @@ We welcome contributions from developers. Here are some resources:
   * [**Using Issue Tracker**](/docs/issueTracker.md) :This guide helps to know how the issues are prioritised and how can you query for a particular issue.
   * [**Keep A ChangeLog**](www.keepachangelog.com) :We keep a change log on each of our project releases. Read more about it on the website
   provided.
-
 ## Contact
 A whatsapp group is there which has all the team members of the project. Just drop a mail at psnappz@gmail.com and we'll add you to the group. Or use the issue tracker for any help.
 
