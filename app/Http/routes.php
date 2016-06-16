@@ -20,6 +20,5 @@ Route::get('Admin',function () {
     echo $Admin->id;
 });
 
-Route::auth();
 
 Route::get('/home', 'HomeController@index');
