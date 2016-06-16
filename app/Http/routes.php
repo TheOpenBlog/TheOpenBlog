@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('Admin',function () {
+    $Admin = App\Admin::find(1);
+    echo $Admin->id;
+});
+
+
+Route::get('/home', 'HomeController@index');
