@@ -12,11 +12,11 @@
 
 ### **Installing Prerequisites**
 
-- MAMP server can be downloaded from [here](https://nodejs.org/).
+- MAMP server can be downloaded from [here](https://www.mamp.info/en/downloads/).
 
 - Composer can be downloaded from [here](https://getcomposer.org/download/).
 
-- GitDesktop can be found [here](https://nodejs.org/).
+- GitDesktop can be found [here](https://desktop.github.com).
 
 - Atom Text Editor is found [here](https://atom.io/).
 
@@ -27,19 +27,24 @@
 1.  For managing dependencies, Laravel uses composer.
 
 2. After the Composer is installed, check the installation by typing the Composer command in the command prompt as shown in the following screenshot.
+
 <img src="/images/composer.jpg">
 
 3. Now download a copy of this repository directly or using GitDesktop inside the server HTDOCS folder.
 
 4. Now using the CMD go to the directory.
+
 ```sh
 cd C:/MAMP/HTDOCS
 ```
+
 5. Type
- ```sh
+
+```
 composer install
 ```
- This will install the dependencies for the project.
+
+This will install the dependencies for the project.
 
 6. Now go to .env file and open it with sublime text and add the lines given below or replace it if exist.
 
