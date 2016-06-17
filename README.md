@@ -8,7 +8,7 @@ TheOpenBlog is an open source blogging platform for the public. This includes ma
 ## Interested to join the developer team?
 We welcome contributions from developers. Here are some resources:
   * [**Contributor Guide**](/docs/contribute.md) : This document describes what you need to know/do to become a contributor. This is a **must read for new contributors**.
-  *  [**Setting Up the Environment**] (/docs/setup.md) : This guide will help you set up the development environment in your local machine.
+  * [**Setting Up the Environment**](/docs/setup.md) : This guide will help you set up the development environment in your local machine.
   * [**Using Issue Tracker**](/docs/issueTracker.md) :This guide helps to know how the issues are prioritised and how can you query for a particular issue.
   * [**Keep A ChangeLog**](www.keepachangelog.com) :We keep a change log on each of our project releases. Read more about it on the website
   provided.
