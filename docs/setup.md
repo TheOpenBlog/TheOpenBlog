@@ -3,11 +3,11 @@
 ###Prerequisites
 
 - Composer
-- Laravel 5.2(No download required)
-- Text Editor(Sublime text or Atom recommended)
-- Server(MAMP or SAMP recommended)
-- GitDesktop(Optional but recommended)
-- Git(Not needed if you have GitDesktop)
+- Laravel 5.2 (No download required)
+- Text Editor (Sublime text or Atom recommended)
+- Server (MAMP or SAMP recommended)
+- GitDesktop (Optional but recommended)
+- Git (Not needed if you have GitDesktop)
 
 
 ### **Installing Prerequisites**
