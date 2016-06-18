@@ -8,7 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    This is your personal home page.All your work can be seen here.
                 </div>
             </div>
         </div>
