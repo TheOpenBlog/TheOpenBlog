@@ -13,6 +13,9 @@ We welcome contributions from developers. Here are some resources:
   * [**Keep A ChangeLog**](www.keepachangelog.com) :We keep a change log on each of our project releases. Read more about it on the website
   provided.
 
+##License
+[See here](/LICENSE.md)
+
 ## Contact
 A whatsapp group is there which has all the team members of the project. Just drop a mail at psnappz@gmail.com and we'll add you to the group. Or use the issue tracker for any help.
 
@@ -21,4 +24,5 @@ A whatsapp group is there which has all the team members of the project. Just dr
 @PSNAppZ              
 @Adhi1234   
 @th3-j0k3r
+
 ...(this list will be updated once a member is contributed to this project)
