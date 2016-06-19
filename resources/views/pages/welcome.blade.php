@@ -8,12 +8,17 @@
                 <div class="panel-heading">Recent Posts</div>
 
                 <div class="panel-body">
-                    Here you will see the list of blog posts.
+                    <h3>Post heading</h3>
+                    <p>Here you will see the list of blog posts...</p>
+                    <a href="#" class="btn btn-danger">Read this</a>
                 </div>
                 <hr>
                 <div class="panel-body">
-                    Like this :D
+                    <h3>Post 2</h3>
+                    <p>Like this...</p>
+                    <a href="#" class="btn btn-danger">Read this</a>
                 </div>
+                <hr>
             </div>
         </div>
     </div>
