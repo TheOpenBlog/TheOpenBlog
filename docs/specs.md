@@ -30,6 +30,7 @@
 - [ ] Upload profile picture
 - [ ] Create blog posts
 - [ ] Edit blog posts
+- [ ] Subscribe to blog posts
 - [ ] Give custom url to blog posts
 - [ ] Give comment to posts
 - [ ] Post pictures in posts
