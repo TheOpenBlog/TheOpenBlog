@@ -23,5 +23,24 @@
         .fa-btn {
             margin-right: 6px;
         }
+        .navbar-header{
+            background-color: #F3FAB6;
+            padding-left: 10px;
+        }
+        .navbar{
+            background-color: #A8CD1B;
+        }
+        .footer{
+            position:fixed;
+            padding: .7%;
+            margin-top:40px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #f5f5f5;
+        }
+        #browsers:hover{
+            color:red;
+        }
     </style>
 </head>
