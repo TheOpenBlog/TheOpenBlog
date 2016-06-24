@@ -15,13 +15,15 @@ Route::get('/', function () {
     return view('pages.welcome');
 });
 
-Route::get('Admin/{id}',function ($id) {
+Route::get('Admin/{id}', function ($id) {
     $Admin = App\Admin::find($id);
     echo $Admin->name;
 });
 
-Route::get('/contributors','PageController@contributors');
-
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'PageController@index');
+
+Route::get('/dashboard', 'PageController@dashboard');
+
+Route::get('/notifications', 'PageController@notifications');

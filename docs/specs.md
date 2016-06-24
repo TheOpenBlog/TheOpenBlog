@@ -22,9 +22,8 @@
 - [X] LICENSE
 - [X] Testing Documentation
 
-
-
 ### User Features
+
 - [ ] Create account
 - [ ] Edit profile
 - [ ] Upload profile picture
@@ -34,6 +33,7 @@
 - [ ] Give custom url to blog posts
 - [ ] Give comment to posts
 - [ ] Post pictures in posts
+- [ ] Traffic Graphs
 ...(will be updated)
 
 ### Moderator Features
@@ -44,7 +44,6 @@
 - [ ] Request for banning account
 - [ ] Warn users
 ...(will be updated)
-
 
 ### Admin Features
 
@@ -62,10 +61,10 @@
 
 ### System Features
 
-- [ ] Automatic confirmation mail
-- [ ] User posts will be automatically put into moderator list for approval
+- [ ] Automatic confirmation mail sending
+- [ ] User posts will be automatically put into moderator queue for approval
 - [ ] Spam/Flood control
 - [ ] Bad words control
 - [ ] Warning system
 - [ ] Ban system
-...(will be updated)
+- [ ] Auto Account Lock(If wrong password is given more than 3 times)
