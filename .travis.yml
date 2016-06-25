@@ -4,9 +4,8 @@ php:
   - 5.6
 
 before_script:
-  - php artisan cache:clear
   - cp .env.travis .env
-  - mysql -e 'create database OpenBlog_testing;'
+  - mysql -e 'create database TheOpenBlog_tests;'
   - composer self-update
   - composer install --no-interaction
   - php artisan key:generate
