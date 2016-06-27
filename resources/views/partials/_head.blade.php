@@ -37,10 +37,13 @@
         .navbar{
             background-color: #2c3e50;
         }
-        .navbar-default .navbar-nav li a{
+        .navbar-default .navbar-nav li a,.navbar-default .navbar-nav .open .dropdown-menu li a{
             color:#e74c3c;
         }
         .navbar-default .navbar-nav li a:hover{
+            color:white;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu li a:hover{
             color:white;
         }
         .jumbotron{
@@ -55,6 +58,7 @@
         .jumbotron a{
             color:#e74c3c;
         }
+        .navbar-default
         .footer{
             position:fixed;
             padding: .7%;
@@ -62,10 +66,13 @@
             bottom: 0;
             width: 100%;
             height: 40px;
-            background-color: #f5f5f5;
+            background-color: #e74c3c;
+        }
+        #browsers,.footer p{
+            color:white;
         }
         #browsers:hover{
-            color:red;
+            color:#2c3e50;
         }
     </style>
 </head>
