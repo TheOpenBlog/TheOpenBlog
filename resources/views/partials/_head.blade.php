@@ -58,7 +58,9 @@
         .jumbotron a{
             color:#e74c3c;
         }
-        .navbar-default
+        .progress-bar-success{
+            background-color:#2c3e50;
+        }
         .footer{
             position:fixed;
             padding: .7%;

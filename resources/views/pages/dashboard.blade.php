@@ -43,22 +43,11 @@
     </div>
     <div id="traffic" class="tab-pane fade">
       <h3>Traffic</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <p>Google visaulization charts are used to display charts.</p>
       <!--Traffic Graph shows the traffic -->
-  <div class="container">
-      <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-              <div class="panel panel-info">
-                  <div class="panel-heading">Top page views</div>
-                  <div class="panel-body">
-                      <h3>My Post 1</h3>
-                      <p>Here you will see the list of blog posts you created...</p>
-                      <a href="#" class="btn btn-warning">Read this</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="chart_div"></div>
+
     </div>
     <div id="support" class="tab-pane fade">
       <h3><span class="label label-success">Support</span></h3>
