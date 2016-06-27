@@ -58,6 +58,10 @@ DB_PASSWORD=root
 
 ````
 
-7. Now the development environment is ready. Run the server and go to local host to see the output.
+7. Type
+```
+php artisan migrate
+```
+8. Now the development environment is ready. Run the server and go to local host to see the output.
 
-8. If there is an out put you have successfully set up the environment. Happy Coding!.  
+9. If there is an out put you have successfully set up the environment. Happy Coding!.  
