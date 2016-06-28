@@ -41,18 +41,20 @@
       </div>
   </div>
     </div>
-    <div id="traffic" class="tab-pane fade">
+    <div id="traffic" class="tab-pane fade" style="width: 900px; height: 300px;">
       <h3>Traffic</h3>
-      <p>Google visaulization charts are used to display charts.</p>
+      <p>The below chart shows the no of visits calculated in months of present year.</p>
       <!--Traffic Graph shows the traffic -->
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <div id="chart_div"></div>
+      <canvas id="myChart" width="400" height="300"></canvas>
+      <br>
+      <br>
+      <br>
+      <br>
 
     </div>
     <div id="support" class="tab-pane fade">
       <h3><span class="label label-success">Support</span></h3>
       <p>Get support here. Fill and submit the form below and we will contact you in a while.</p>
-      <!--Traffic Graph shows the traffic -->
   <div class="container">
       <div class="row">
           <div class="col-md-10 col-md-offset-1">
@@ -70,4 +72,61 @@
     </div>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+<script>
+var ctx = document.getElementById("myChart");
+var myLineChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [
+            {
+                label: "Visits",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,192,192,0.4)",
+                borderColor: "rgba(75,192,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 1,
+                pointHitRadius: 10,
+                data: [65, 59, 80, 81, 56, 55, 40, 30, 50, 30, 70, 100],
+            }
+        ]
+    },
+    options:{
+        responsive: true
+    }
+});
+
+</script>
 @endsection
+<!-- This php below will get the data from database and will be converted into json for chart. -->
+<?php
+// query data
+# $result = mysql_query(...);
+
+// format data structure
+# $data = array();
+# $i = 0;
+# while($row = mysql_fetch_array($result)) {
+#     $i += 1;
+#     array_push($data, array($i) + $row);
+# }
+
+// convert to JavaScript
+?>
+<!--var raw_data = <?php #echo json_encode($data) ?>;
+
+// visualize
+var data = google.visualization.arrayToDataTable(raw_data);
+-->
