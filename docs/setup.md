@@ -35,7 +35,7 @@
 4. Now using the CMD go to the directory.
 
 ```sh
-cd C:/MAMP/HTDOCS
+cd C:/MAMP/HTDOCS/TheOpenBlog
 ```
 
 5. Type
