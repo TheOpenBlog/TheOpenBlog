@@ -15,3 +15,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ###Fixed
 - Fixed RegistrationTest
 - Typo in setup.md
+
+###Changed
+- Changed graphs to Chart.js
