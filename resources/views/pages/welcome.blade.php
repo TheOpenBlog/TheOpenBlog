@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="jumbotron" id="#logoimage">
-        <center><h1>The Open Blog</h1><center>
+        <center><h1>The Open Blog - <span class="label label-danger">PRIVATE BETA</span></h1><center>
         <p>The Open Blog is an opensource blogging platform made for the community by the community.
          Read the recent posts made by our members below or search a specific post or user using our
          custom search <a href="#">here</a>.</p>
