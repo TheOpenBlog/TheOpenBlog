@@ -11,7 +11,7 @@ class RegistrationTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testSuitSuccess()
     {
         $this->visit('/register')
         ->type('Tester2', 'name')
