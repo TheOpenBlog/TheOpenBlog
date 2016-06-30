@@ -41,7 +41,7 @@
       </div>
   </div>
     </div>
-    <div id="traffic" class="tab-pane fade" style="width: 900px; height: 300px;">
+    <div id="traffic" class="tab-pane fade">
       <h3>Traffic</h3>
       <p>The below chart shows the no of visits calculated in months of present year.</p>
       <!--Traffic Graph shows the traffic -->
@@ -104,7 +104,7 @@ var myLineChart = new Chart(ctx, {
         ]
     },
     options:{
-        responsive: true
+        responsive: false
     }
 });
 

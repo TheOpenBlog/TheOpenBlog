@@ -27,3 +27,5 @@ Route::get('/home', 'PageController@index');
 Route::get('/dashboard', 'PageController@dashboard');
 
 Route::get('/notifications', 'PageController@notifications');
+
+Route::resource('posts', 'PostController');
