@@ -11,7 +11,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Documentation of specifications
 - Laravel Integration
 - Travis-CI Integration
-- Ability to Post[Feature]
+- Ability to Post [Feature - Not Complete]
+- Automatic Confirmation mail sending [Feature]
 
 ###Fixed
 - Fixed RegistrationTest
