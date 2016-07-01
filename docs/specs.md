@@ -61,7 +61,7 @@
 
 ### System Features
 
-- [ ] Automatic confirmation mail sending
+- [X] Automatic confirmation mail sending
 - [ ] User posts will be automatically put into moderator queue for approval
 - [ ] Spam/Flood control
 - [ ] Bad words control
