@@ -11,14 +11,24 @@ class RegistrationTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testSuitSuccess()
     {
         $this->visit('/register')
-        ->type('Tester2', 'name')
-        ->type('tester2@gn.com', 'email')
+        ->type('Tester', 'name')
+        ->type('tester@gmail.com', 'email')
         ->type('password12', 'password')
         ->type('password12', 'password_confirmation')
         ->press('Register')
         ->seePageIs('/');
+    }
+    public function testSuitFailure()
+    {
+        $this->visit('/register')
+        ->type('TestFail', 'name')
+        ->type('failedtester@goofy.com', 'email')
+        ->type('password12', 'password')
+        ->type('wrongpasswd', 'password_confirmation')
+        ->press('Register')
+        ->seePageIs('/register');
     }
 }
