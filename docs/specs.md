@@ -24,7 +24,7 @@
 
 ### User Features
 
-- [ ] Create account
+- [X] Create account
 - [ ] Edit profile
 - [ ] Upload profile picture
 - [ ] Create blog posts
