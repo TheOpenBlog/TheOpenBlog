@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
 use App\ActivationService;
 use Auth;
+use Hash;
 
 class AuthController extends Controller
 {
@@ -90,27 +91,15 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-
-    public function login(Request $request)
-    {
-        $this->validate($request, [
-            'email' => 'required|email', 'password' => 'required',
-        ]);
-        if (Auth::validate(['email' => $request->email, 'password' => $request->password, 'activated' => 0])) {
-            return redirect($this->loginPath())
-                ->withInput($request->only('email', 'remember'))
-                ->withErrors('Your account is Inactive or not verified');
-        }
-        $credentials  = array('email' => $request->email, 'password' => $request->password);
-        if (Auth::attempt($credentials, $request->has('remember'))){
-                return redirect()->intended($this->redirectPath());
-        }
-        return redirect('/login')
-            ->withInput($request->only('email', 'remember'))
-            ->withErrors([
-                'email' => 'Incorrect email address or password',
-            ]);
+    public function authenticated(Request $request, $user)
+{
+    if (!$user->activated) {
+        $this->activationService->sendActivationMail($user);
+        auth()->logout();
+        return back()->with('warning', 'You need to confirm your account. We have sent you an activation code, please check your email.');
     }
+    return redirect()->intended($this->redirectPath());
+}
 
     public function activateUser($token)
     {
