@@ -27,7 +27,7 @@
 - [X] Create account
 - [ ] Edit profile
 - [ ] Upload profile picture
-- [ ] Create blog posts
+- [X] Create blog posts
 - [ ] Edit blog posts
 - [ ] Subscribe to blog posts
 - [ ] Give custom url to blog posts
@@ -38,7 +38,8 @@
 
 ### Moderator Features
 
-- [ ] Approve/Reject posts
+- [X] Review Flagged posts(above 5 flags)
+- [X] Delete a flagged Post 
 - [ ] Delete/Edit Comments
 - [ ] Suspend user account
 - [ ] Request for banning account

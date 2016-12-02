@@ -9,17 +9,14 @@
             <a data-toggle="collapse" data-parent="#accordion" href="#myposts">
                 My Posts</a>
         </div>
+        @foreach($posts as $post)
         <div id="myposts" class="panel-collapse collapse in">
           <div class="panel-body">
-              <h3>{}</h3>
-              <p>Here you will see the list of blog posts you created...</p>
-              <a href="#" class="btn btn-warning">Read this</a>
+              <h3>{{$post->title}}</h3>
+              <a href="posts/{{$post->id}}" class="btn btn-warning">Read this</a>
           </div>
-          <div class="panel-body">
-              <h3>My Post 2</h3>
-              <p>My second post</p>
-              <a href="#" class="btn btn-warning">Read this</a>
-          </div>
+          <hr>
+      @endforeach
         </div>
       </div>
     </div>

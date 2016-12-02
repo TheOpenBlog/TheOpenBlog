@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.welcome');
-});
+Route::get('/','PageController@welcome');
 
 Route::get('Admin/{id}', function ($id) {
     $Admin = App\Admin::find($id);
@@ -32,6 +30,12 @@ Route::get('/notifications', 'PageController@notifications');
 
 Route::resource('posts', 'PostController');
 
-Route::get('/invite', 'PageController@invite');
+Route::get('posts/{id}','PostController@show');
 
-Route::post('sendmail', 'PageController@sendmail');
+Route::post('flag/{id}','PostController@flag');
+
+Route::post('like/{id}','PostController@like');
+
+Route::get('moderate','ModeratorController@index');
+
+Route::post('remove/{id}','ModeratorController@destroy');

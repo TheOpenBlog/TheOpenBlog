@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "61bfc1f9f2ab0883ebac5c51fcb489b3",
-    "content-hash": "0feb6af5bef0e094e776fba476c27e7c",
+    "hash": "1440276c33caf5c11cf1b11a4f217cd4",
+    "content-hash": "d5326b87d26d29bfa699d02b2c0581e1",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -959,6 +959,62 @@
                 "shell"
             ],
             "time": "2016-03-09 05:03:14"
+        },
+        {
+            "name": "rtconner/laravel-likeable",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rtconner/laravel-likeable.git",
+                "reference": "82f841190d815a65101eff140915d646bc4fb690"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rtconner/laravel-likeable/zipball/82f841190d815a65101eff140915d646bc4fb690",
+                "reference": "82f841190d815a65101eff140915d646bc4fb690",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": ">=5.0",
+                "illuminate/support": ">=5.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Conner\\Likeable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Conner",
+                    "email": "rtconner@smarter.bz"
+                }
+            ],
+            "description": "Trait for Laravel Eloquent models to allow easy implementation of a 'like' or 'favorite' or 'remember' feature.",
+            "homepage": "https://smartersoftware.net/packages/laravel-likeable-favorite",
+            "keywords": [
+                "Follow",
+                "eloquent",
+                "favorite",
+                "favourite",
+                "laravel",
+                "likable",
+                "like",
+                "likeable",
+                "remember",
+                "trait"
+            ],
+            "time": "2016-02-15 17:49:24"
         },
         {
             "name": "swiftmailer/swiftmailer",

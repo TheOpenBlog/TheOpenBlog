@@ -150,6 +150,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        \Conner\Likeable\LikeableServiceProvider::class,
 
         /*
          * Application Service Providers...

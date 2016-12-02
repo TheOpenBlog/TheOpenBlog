@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Mail;
+use App\User;
+use App\Post;
+use Auth;
+
 class PageController extends Controller
 {
     /**
@@ -24,7 +28,13 @@ class PageController extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        $posts = Post::where('user_id',Auth::User()->id)->get();
+        return view('pages.home')->withPosts($posts);
+    }
+    public function welcome()
+    {
+        $posts = Post::orderBy('id','desc')->paginate(10);
+        return view('pages.welcome')->withPosts($posts);
     }
     public function dashboard()
     {

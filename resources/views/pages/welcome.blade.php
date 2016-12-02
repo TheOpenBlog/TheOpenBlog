@@ -14,18 +14,17 @@
         <div class="col-sm-10 col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">Recent Posts</div>
+                @foreach($posts as $post)
                 <div class="panel-body">
-                    <h3>Post heading</h3>
-                    <p>Here you will see the list of blog posts...</p>
-                    <a href="#" class="btn btn-danger">Read this</a>
+                    <h3>{{$post->title}}</h3>
+                    <p>By:<span class="label label-primary">{{$post->user->name}}</span></p>
+                    <p>On:{{$post->created_at}}</p>
+                    <a href="posts/{{$post->id}}" class="btn btn-danger">Read this</a>
                 </div>
                 <hr>
-                <div class="panel-body">
-                    <h3>Post 2</h3>
-                    <p>Like this...</p>
-                    <a href="#" class="btn btn-danger">Read this</a>
-                </div>
+            @endforeach
             </div>
+            {{ $posts->links() }}
         </div>
     </div>
 </div>
