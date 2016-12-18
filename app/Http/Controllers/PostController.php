@@ -54,10 +54,12 @@ class PostController extends Controller
         $post->user_id=Auth::user()->id;
         $post->title =$request->title;
         $post->body=$request->body;
+        if($image){
         $filename  = time() . '.' . $image->getClientOriginalExtension();
         $path = public_path('FeaturedImages/' . $filename);
         Image::make($image->getRealPath())->resize(468, 249)->save($path);
         $post->image = $filename;
+        }
         $post->save();
         $count->post_id=$post->id;
         $count->counter=0;
