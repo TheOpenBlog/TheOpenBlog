@@ -35,6 +35,9 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
+                          @if(Auth::User()->role>0)
+                          <li><a href="{{ url('/moderate') }}"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Moderate</a></li>
+                          @endif
                             <li><a href="{{ url('/dashboard') }}"><i class="fa fa-btn fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
                             <li><a href="{{ url('/notifications') }}"><i class="fa fa-btn fa-bell"></i>Notifications</a></li>
                             <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>

@@ -8,6 +8,7 @@ use Mail;
 use App\User;
 use App\Post;
 use Auth;
+use App\Support;
 
 class PageController extends Controller
 {
@@ -26,6 +27,16 @@ class PageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function supportPost(Request $request){
+       $sup=new Support();
+       $sup->user_id=Auth::User()->id;
+       $sup->subject=$request->subject;
+       $sup->message=$request->message;
+       $sup->reply="Thank you for submitting the query, our Support team will reply you in a short while.";
+       $sup->save();
+
+       return redirect()->back();
+          }
     public function index()
     {
         $posts = Post::where('user_id',Auth::User()->id)->get();
@@ -38,7 +49,8 @@ class PageController extends Controller
     }
     public function dashboard()
     {
-        return view('pages.dashboard');
+      $sup=Support::where('user_id',Auth::User()->id)->orderBy('id','desc')->get();
+        return view('pages.dashboard')->withSup($sup);
     }
     public function notifications()
     {
@@ -48,25 +60,5 @@ class PageController extends Controller
     {
         return view('emails.invite');
     }
-    public function sendmail(Request $request)
-    {
-        $this->validate($request, array(
-            'email'   => 'required|max:60',
-        ));
-            $data = array(
-                'name' => "The Open Blog Mail",
-            );
-
-            Mail::send('emails.test', $data, function ($message) {
-
-                $message->from('openblogquery@gmail.com', 'The Open Blog');
-
-                $message->to('thepsnappz@gmail.com')->subject('TheOpenBlog|Invitation');
-
-            });
-
-            return "Your email has been sent successfully";
-
-}
 
 }

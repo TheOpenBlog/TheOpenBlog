@@ -39,3 +39,11 @@ Route::post('like/{id}','PostController@like');
 Route::get('moderate','ModeratorController@index');
 
 Route::post('remove/{id}','ModeratorController@destroy');
+
+Route::get('dismiss/{id}','ModeratorController@dismiss');
+
+Route::get('deleteSup/{id}','ModeratorController@removeSup');
+
+Route::post('supportReply/{id}','ModeratorController@reply');
+
+Route::post('support','PageController@supportPost');

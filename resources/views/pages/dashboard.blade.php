@@ -62,8 +62,32 @@
                   <div class="panel-heading">How may we help you?</div>
                   <div class="panel-body">
                       <h3>Support</h3>
-                      <p>Here you will see the list of blog posts you created...</p>
-                      <a href="#" class="btn btn-warning">Read this</a>
+                      <p>Need Assistance? Submit the form below and you will get a reply from our support team.</p>
+                      <form method="POST" action="support">
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject" style=" width:100%;"><br>
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
+                        <label for="message">Content:</label>
+                        <textarea name="message" style="width:100%; height: 128px;"></textarea>
+                        <input type="submit" class="btn btn-success">
+                      </form>
+                      <hr>
+                      @foreach($sup as $s)
+                      <ul class="media-list">
+                        <li class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="/tob.png" style="width:64px; height:64px;" alt="theopenblog">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="media-heading">Reply To:{{$s->subject}}</h4>
+                            <p>{{$s->reply}}</p>
+                          </div>
+                        </li>
+                      </ul>
+                      @endforeach
                   </div>
               </div>
           </div>
@@ -71,7 +95,10 @@
   </div>
     </div>
   </div>
+  </div>
 </div>
+<br>
+<br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
 <script>
 var ctx = document.getElementById("myChart");
