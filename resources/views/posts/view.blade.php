@@ -3,8 +3,9 @@
 @section('content')
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h3>{{$post->title}}</h3>
-            <p>{{$post->body}}</p>
+            <center><h2>{{$post->title}}</h2>
+            <img src="/FeaturedImages/{{$post->image}}"></img></center>
+            <h5>{{$post->body}}</h5>
             <form action="/like/{{$post->id}}" method="POST">
                 <input type ="hidden" name="_token" value="{{csrf_token()}}"/>
                 <button type="submit" class="btn btn-default btn-lg">
