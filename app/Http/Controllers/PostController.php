@@ -8,6 +8,8 @@ use App\Http\Requests;
 use Auth;
 use App\Flag;
 use App\Count;
+use Illuminate\Support\Facades\Input;
+ use Intervention\Image\ImageManagerStatic as Image;
 
 class PostController extends Controller
 {
@@ -48,9 +50,14 @@ class PostController extends Controller
         //store in the database
         $count = new Count();
         $post = new Post;
+        $image = Input::file('featured_image');
         $post->user_id=Auth::user()->id;
         $post->title =$request->title;
         $post->body=$request->body;
+        $filename  = time() . '.' . $image->getClientOriginalExtension();
+        $path = public_path('FeaturedImages/' . $filename);
+        Image::make($image->getRealPath())->resize(468, 249)->save($path);
+        $post->image = $filename;
         $post->save();
         $count->post_id=$post->id;
         $count->counter=0;
