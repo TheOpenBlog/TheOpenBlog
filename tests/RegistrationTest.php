@@ -19,7 +19,7 @@ class RegistrationTest extends TestCase
         ->type('password12', 'password')
         ->type('password12', 'password_confirmation')
         ->press('Register')
-        ->seePageIs('/verify');
+        ->seePageIs('/login');
     }
     public function testSuitFailure()
     {
