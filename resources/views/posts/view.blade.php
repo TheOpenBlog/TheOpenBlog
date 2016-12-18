@@ -4,8 +4,17 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <center><h2>{{$post->title}}</h2>
-            <img src="/FeaturedImages/{{$post->image}}"></img></center>
-            <h5>{{$post->body}}</h5>
+                @if($post->image!=NULL)
+            <img src="/FeaturedImages/{{$post->image}}"></img>
+        @endif
+        </center>
+        <br>
+
+        <div class="panel panel-default">
+  <div class="panel-body">
+      <h4>{{$post->body}}</h4>
+  </div>
+</div>
             <form action="/like/{{$post->id}}" method="POST">
                 <input type ="hidden" name="_token" value="{{csrf_token()}}"/>
                 <button type="submit" class="btn btn-default btn-lg">
