@@ -25,6 +25,12 @@ class CreateCommentsTable extends Migration
           ->onDelete('cascade');
           $table->timestamps();
           });
+          Schema::table('comments',function($table)){
+            $table->foreign('post_id')->references('id')->on('post')->onDelete('cascade');
+          });
+
+
+
   }
 
   /**
@@ -34,7 +40,9 @@ class CreateCommentsTable extends Migration
    */
   public function down()
   {
+      Schema::dropForeign(['post_id']);
       Schema::drop('comments');
+
 
   }
 }

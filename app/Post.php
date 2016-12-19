@@ -14,4 +14,8 @@ use LikeableTrait;
     public function Flag(){
         return $this->hasMany('App\Flag');
     }
+    public function comments()
+    {
+      return $this->hasMany('App\comment');
+    }
 }

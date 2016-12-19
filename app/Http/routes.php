@@ -30,6 +30,9 @@ Route::get('/notifications', 'PageController@notifications');
 
 Route::resource('posts', 'PostController');
 
+Route::post('comments/{post_id}', ['uses' => 'CommentsController@store', 'as' => 'comments.store']);
+
+
 Route::get('posts/{id}','PostController@show');
 
 Route::post('flag/{id}','PostController@flag');
@@ -47,3 +50,5 @@ Route::get('deleteSup/{id}','ModeratorController@removeSup');
 Route::post('supportReply/{id}','ModeratorController@reply');
 
 Route::post('support','PageController@supportPost');
+
+//comments
