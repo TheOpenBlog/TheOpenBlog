@@ -24,4 +24,3 @@ A whatsapp group is there which has all the team members of the project. Just dr
 @Adhi1234   
 @th3-j0k3r
 
-...(this list will be updated once a member is contributed to this project)
